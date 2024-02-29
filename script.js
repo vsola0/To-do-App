@@ -51,13 +51,6 @@ function removeTask(button) {
     }
 }
 
-function removeTask(button) {
-    if (confirm('Do you want to delete this task?')) {
-        const task = button.parentElement.parentElement;
-
-        document.getElementById('taskList').removeChild(task);
-    }
-}
 
 function resetForm() {
     document.getElementById('title').value = '';
