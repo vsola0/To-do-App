@@ -32,13 +32,13 @@ function insertTask() {
 }
 
 function editTask(button) {
-    selectedTask = button.parentElement. parentElement;
+    selectedTask = button.parentElement.parentElement;
 
-    document.getElementById('title').value = selectedTask.getElementByTagName('strong') [0].innerText;
-    document.getElementById('description').value = selectedTask.getElementByTagName('p') [0].innerText;
+    document.getElementById('title').value = selectedTask.getElementsByTagName('strong')[0].innerText;
+    document.getElementById('description').value = selectedTask.getElementsByTagName('p')[0].innerText;
 
-    document.getElementById('dueDate').value = selectedTask.getElementByTagName('small') [0].innerText.replace('Due: ', '').trim();
-    document.getElementById('priority').value = selectedTask.getElementByTagName('small') [1].innerText.replace('Priority: ', '').trim();
+    document.getElementById('dueDate').value = selectedTask.getElemenstByTagName('small')[0].innerText.replace('Due: ', '').trim();
+    document.getElementById('priority').value = selectedTask.getElementsByTagName('small')[1].innerText.replace('Priority: ', '').trim();
 
 }
 
