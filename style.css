@@ -31,5 +31,22 @@ textarea {
     border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 20px;
+}
 
+.form-actions {
+    text-align: right;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(41, 175, 41);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 14px;
+}
+
+button:hover {
+    background-color: rgb(53, 190, 53);
 }
