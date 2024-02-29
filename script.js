@@ -21,6 +21,12 @@ function insertTask() {
             <small>Due: ${dueDate}</small>
             <small>Priority: ${priority}</small>
         </div>
-        
-        `
+        <div class="task-actions">
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+        `;
+    
+    taskList.appendChild(taskDiv);
+    
 }
