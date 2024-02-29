@@ -1,4 +1,4 @@
-const selectedTask = null;
+let selectedTask = null;
 
 function insertTask() {
     const title = document.getElementById('title').value;
