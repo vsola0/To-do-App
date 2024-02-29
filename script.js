@@ -14,4 +14,13 @@ function insertTask() {
     const taskDiv = document.createElement('div');
     taskDiv.classList.add('task');
 
+    taskDiv.innerHTML = `
+        <div class="task-info">
+            <strong>${title}</strong>
+            <p>${description}</p>
+            <small>Due: ${dueDate}</small>
+            <small>Priority: ${priority}</small>
+        </div>
+        
+        `
 }
