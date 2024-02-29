@@ -23,7 +23,7 @@ function insertTask() {
         </div>
         <div class="task-actions">
             <button onclick="editTask(this)">Edit</button>
-            <button onclick="">Delete</button>
+            <button onclick="removeTask(this)">Delete</button>
         </div>
         `;
     
@@ -42,3 +42,10 @@ function editTask(button) {
 
 }
 
+function removeTask(button) {
+    if (confirm('Do you want to delete this task?')) {
+        const task = button.parentElement.parentElement;
+
+        document.getElementById('taskList').removeChild(task);
+    }
+}
