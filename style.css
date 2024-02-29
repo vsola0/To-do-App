@@ -56,7 +56,7 @@ button:hover {
 }
 
 .task {
-    background: white;
+    background: rgb(218, 218, 218);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
