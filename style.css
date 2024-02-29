@@ -50,3 +50,25 @@ button {
 button:hover {
     background-color: rgb(53, 190, 53);
 }
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-info {
+    flex-grow: 1;
+}
+
+.task-actions button {
+    margin-left: 10px;
+}
