@@ -15,3 +15,21 @@ fieldset {
     border:none;
     margin-bottom: 20px;
 }
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(105, 9, 9);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
