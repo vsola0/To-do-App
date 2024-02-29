@@ -1,3 +1,4 @@
+const selectedTask = null;
 
 function insertTask() {
     const title = document.getElementById('title').value;
@@ -56,4 +57,12 @@ function removeTask(button) {
 
         document.getElementById('taskList').removeChild(task);
     }
+}
+
+function resetForm() {
+    document.getElementById('title').value = '';
+    document.getElementById('description').value = '';
+    document.getElementById('dueDate').value = '';
+    document.getElementById('priority').value = '';
+
 }
