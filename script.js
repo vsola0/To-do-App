@@ -22,11 +22,23 @@ function insertTask() {
             <small>Priority: ${priority}</small>
         </div>
         <div class="task-actions">
-            <button>Edit</button>
-            <button>Delete</button>
+            <button onclick="editTask(this)">Edit</button>
+            <button onclick="">Delete</button>
         </div>
         `;
     
     taskList.appendChild(taskDiv);
     
 }
+
+function editTask(button) {
+    selectedTask = button.parentElement. parentElement;
+
+    document.getElementById('title').value = selectedTask.getElementByTagName('strong') [0].innerText;
+    document.getElementById('description').value = selectedTask.getElementByTagName('p') [0].innerText;
+
+    document.getElementById('dueDate').value = selectedTask.getElementByTagName('small') [0].innerText.replace('Due: ', '').trim();
+    document.getElementById('priority').value = selectedTask.getElementByTagName('small') [1].innerText.replace('Priority: ', '').trim();
+
+}
+
