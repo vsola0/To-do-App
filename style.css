@@ -4,3 +4,14 @@ body {
     margin: 0;
     padding: 25px;
 }
+
+.crud-container {
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+fieldset {
+    border:none;
+    margin-bottom: 20px;
+}
